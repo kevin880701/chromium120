@@ -1,0 +1,32 @@
+html, body, div {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+.content {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+}
+
+.loading {
+    margin-top: 25vh;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #7B7B7B;
+    border-top-color: transparent;
+    border-radius: 100%;
+    animation: circle infinite 1.5s linear;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
